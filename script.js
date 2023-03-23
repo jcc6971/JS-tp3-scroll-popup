@@ -14,11 +14,14 @@ document.addEventListener ("scroll",() =>{
         navbar.style.height = "90px"}
         else {navbar.style.height="45px"};
         
+        // DECLENCHEMENT PAR RAPPORT 0 LA POSITION DE L ELEMENT
         if ((improvise.offsetTop- 90) <= window.pageYOffset  ) {
             imgImprovise.style.opacity ="1"
             imgImprovise.style.transform ="none"
         };
-
+        
+        
+        // DECLENCHEMENT AU SCROLL BOTTOM
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) 
         {popup.style.opacity=1
         popup.style.transform="translateX(0)"}
